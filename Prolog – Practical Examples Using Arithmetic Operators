@@ -1,0 +1,17 @@
+Prolog – Practical Examples Using Arithmetic Operators
+
+1 Calculating Area of a Rectangle
+Prolog Code:
+area_rectangle(Length, Breadth, Area) :- Area is Length * Breadth.
+
+2Celsius to Fahrenheit Conversion
+Prolog Code:
+celsius_to_fahrenheit(C, F) :- F is C * 9 / 5 + 32.
+
+3 Factorial
+Prolog Code:
+factorial(0, 1).
+factorial(N, Result) :- N > 0, N_minus_1 is N - 1, factorial(N_minus_1,
+SubResult), Result is N * SubResult.
+
+
